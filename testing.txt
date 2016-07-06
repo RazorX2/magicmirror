@@ -1,3 +1,0 @@
-Test File
-Testing version 2
-This is to test different methods of pushing
