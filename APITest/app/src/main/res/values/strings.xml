@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">APITest</string>
+    <string name="tweet_button">Twitter!</string>
+    <string name="tweet_name">RazorX2</string>
+</resources>

@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
         final TextView Date = (TextView)findViewById(R.id.Date);
         final TextView Time = (TextView)findViewById(R.id.Time);
         Date.setText(getCurrentDate());
