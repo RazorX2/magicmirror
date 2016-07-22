@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\menu\\add_photo.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\menu\\add_photo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\menu\\live_recognition.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\menu\\live_recognition.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\menu\\image_confirmation.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\menu\\image_confirmation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\menu\\choose_user.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\menu\\choose_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\menu\\facial_recognition.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\menu\\facial_recognition.xml"
+    }
+]

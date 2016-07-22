@@ -1,0 +1,51 @@
+<!--
+/* ======================================================================
+ *  Copyright 2014 Qualcomm Technologies, Inc. All Rights Reserved.
+ *  QTI Proprietary and Confidential.
+ *  =====================================================================
+ * @file    activity_live_recognition.xml
+ *
+ */-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16sp"
+    android:paddingLeft="16sp"
+    android:paddingRight="16sp"
+    android:paddingTop="16sp"
+    tools:context=".LiveRecognition" >
+
+    <FrameLayout
+        android:id="@+id/cameraPreview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:textSize="50sp"
+        android:id="@+id/Time"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height ="wrap_content"
+        android:text="New Text"
+        android:id="@+id/Date"
+        android:layout_below="@+id/Time"
+        android:layout_alignRight="@+id/Time"
+        android:layout_alignEnd="@+id/Time"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+        android:textSize="40sp"/>
+
+</RelativeLayout>

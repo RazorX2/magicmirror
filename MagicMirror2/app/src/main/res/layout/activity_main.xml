@@ -30,4 +30,5 @@
         android:textAlignment="textEnd"
         android:layout_gravity="end"
         android:textSize="40sp"/>
+
 </RelativeLayout>

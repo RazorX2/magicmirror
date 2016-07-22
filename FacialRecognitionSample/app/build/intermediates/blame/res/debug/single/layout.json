@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_live_recognition.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_live_recognition.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_facial_recognition.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_facial_recognition.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\images.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\images.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_photo.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_add_photo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\usernames.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\usernames.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_choose_user.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_choose_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_image_confirmation.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_image_confirmation.xml"
+    }
+]
