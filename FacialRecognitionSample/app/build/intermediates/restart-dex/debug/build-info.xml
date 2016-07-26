@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="21"
+    density="tvdpi"
+    format="7"
+    timestamp="512034792445494"
+    token="-3886045392555556717" >
+
+    <task
+        name="javac"
+        duration="182" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="34" />
+    <task
+        name="verifier"
+        duration="7" />
+
+    <artifact
+        location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="512034792445494" >
+        <artifact
+            location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

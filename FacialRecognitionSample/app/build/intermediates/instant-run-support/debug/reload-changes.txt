@@ -1,0 +1,3 @@
+CHANGED,C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\qualcomm\snapdragon\sdk\recognition\sample\FacialRecognitionActivity$2$override.class
+CHANGED,C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\qualcomm\snapdragon\sdk\recognition\sample\FacialRecognitionActivity$override.class
+CHANGED,C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
