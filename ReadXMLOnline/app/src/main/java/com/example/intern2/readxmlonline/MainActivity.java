@@ -1,6 +1,7 @@
 package com.example.intern2.readxmlonline;
 
 
+import android.graphics.Typeface;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         TextView Log = (TextView) findViewById(R.id.Logger);
         Log.setMovementMethod(new ScrollingMovementMethod());
 
+        Typeface typeFace = Typeface.createFromAsset(getAssets(), "PAPYRUS.TTF");
+        Log.setTypeface(typeFace);
 
         CurrentWeatherForecast currentWeatherForecast = null;
         try {
@@ -46,6 +49,31 @@ public class MainActivity extends AppCompatActivity {
         }
         Vector<FutureForecastCapsule> futureForecastCapsule = futureForecast.getFutureForecast();
         System.out.println();
+
+        QuoteOfTheDay quoteOfTheDay = null;
+        try {
+            quoteOfTheDay = new QuoteOfTheDay();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        QuoteCapsule quoteCapsule = quoteOfTheDay.getQuote();
+        System.out.println();
+
+        String content = "";
+        content += "Current Weather:\n\n\n";
+        content += "Location: " + weatherCapsule.location + "\nTemperature: " + weatherCapsule.temperature_string + "\nHeat Index: " + weatherCapsule.heat_index_string;
+        content += "\n\n";
+        content += "Weather Forecast:\n\n\n";
+
+        for (int i = 0; i < futureForecastCapsule.size(); i++)
+        {
+            content += "Date: " + futureForecastCapsule.get(i).date + "\nMax Temp: " + futureForecastCapsule.get(i).day_max_temp + "\nMin Temp: " + futureForecastCapsule.get(i).night_min_temp;
+            content += "\nDay Weather: " + futureForecastCapsule.get(i).day_weather_text + "\nNight Weather: " + futureForecastCapsule.get(i).night_weather_text + "\n\n";
+        }
+
+        content += quoteCapsule.description + "\n-" + quoteCapsule.title;
+
+        Log.setText(content);
     }
 
 }
@@ -198,5 +226,77 @@ class FutureForecastCapsule {
     public String night_min_temp;
     public String day_weather_text;
     public String night_weather_text;
+
+}
+
+class QuoteOfTheDay {
+    Vector<QuoteCapsule> vectParse;
+    private QuoteCapsule objBean;
+    private final URL url;
+
+
+    public QuoteOfTheDay() throws MalformedURLException {
+        url = new URL("http://feeds.feedburner.com/quotationspage/qotd");
+        try {
+            vectParse = new Vector<QuoteCapsule>();
+            URLConnection con = url.openConnection();
+
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+
+            String inputLine;
+            String fullStr = "";
+            while ((inputLine = reader.readLine()) != null)
+                fullStr = fullStr.concat(inputLine + "\n");
+
+            InputStream istream = url.openStream();
+            DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            Document doc = builder.parse(istream);
+            doc.getDocumentElement().normalize();
+
+            NodeList nList = doc.getElementsByTagName("item");
+
+            for (int temp = 2; temp < nList.getLength(); temp++) {
+
+                Node nNode = nList.item(temp);
+                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+                    Element eElement = (Element) nNode;
+
+                    objBean = new QuoteCapsule();
+                    vectParse.add(objBean);
+                    //ADD TAGS
+                    objBean.title = getTagValue("title", eElement);
+                    objBean.description = getTagValue("description", eElement);
+
+                }
+            }
+            System.out.println();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    private String getTagValue(String sTag, Element eElement) {
+        NodeList nlList = eElement.getElementsByTagName(sTag).item(0)
+                .getChildNodes();
+
+        Node nValue = (Node) nlList.item(0);
+
+        return nValue.getNodeValue();
+
+    }
+
+    public QuoteCapsule getQuote()
+    {
+        return vectParse.get((int)(Math.random() * 9));
+    }
+
+}
+
+class QuoteCapsule {
+    public String title;
+    public String description;
 
 }
