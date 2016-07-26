@@ -31,7 +31,7 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 public class FacialRecognitionActivity extends Activity {
-	
+
 	private GridView gridView;
 	public static FacialProcessing faceObj;
 	public final String TAG = "FacialRecognitionActivity";
@@ -40,15 +40,15 @@ public class FacialRecognitionActivity extends Activity {
 	public static final String ALBUM_NAME = "serialize_deserialize";
 	public static final String HASH_NAME = "HashMap";
 	HashMap<String, String> hash;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_facial_recognition);
-		
+
 		hash = retrieveHash(getApplicationContext()); // Retrieve the previously
 														// saved Hash Map.
-		
+
 		if (!activityStartedOnce) // Check to make sure FacialProcessing object
 									// is not created multiple times.
 		{
@@ -84,12 +84,12 @@ public class FacialRecognitionActivity extends Activity {
 		// Vibrator for button press
 		final Vibrator vibrate = (Vibrator) FacialRecognitionActivity.this
 				.getSystemService(Context.VIBRATOR_SERVICE);
-		
+
 		liveRecognition();
-		
+
 
 	}
-	
+
 	/*
 	 * Method to handle adding a new person to the recognition album
 	 */
@@ -101,7 +101,7 @@ public class FacialRecognitionActivity extends Activity {
 		intent.putExtra("IdentifyPerson", false);
 		startActivity(intent);
 	}
-	
+
 	/*
 	 * Method to handle updating of an existing person from the recognition
 	 * album
@@ -112,7 +112,7 @@ public class FacialRecognitionActivity extends Activity {
 		intent.putExtra("UpdateUser", true);
 		startActivity(intent);
 	}
-	
+
 	/*
 	 * Method to handle identification of an existing person from the
 	 * recognition album
@@ -125,7 +125,7 @@ public class FacialRecognitionActivity extends Activity {
 		intent.putExtra("IdentifyPerson", true);
 		startActivity(intent);
 	}
-	
+
 	/*
 	 * Method to handle deletion of an existing person from the recognition
 	 * album
@@ -136,7 +136,7 @@ public class FacialRecognitionActivity extends Activity {
 		intent.putExtra("UpdateUser", false);
 		startActivity(intent);
 	}
-	
+
 	/*
 	 * Method to handle live identification of the people
 	 */
@@ -144,7 +144,7 @@ public class FacialRecognitionActivity extends Activity {
 		Intent intent = new Intent(this, LiveRecognition.class);
 		startActivity(intent);
 	}
-	
+
 	/*
 	 * Method to handle reseting of the recognition album
 	 */
@@ -176,18 +176,18 @@ public class FacialRecognitionActivity extends Activity {
 							}
 						}).show();
 	}
-	
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.facial_recognition, menu);
 		return true;
 	}
-	
+
 	protected void onPause() {
 		super.onPause();
 	}
-	
+
 	protected void onDestroy() {
 		super.onDestroy();
 		Log.d(TAG, "Destroyed");
@@ -201,16 +201,16 @@ public class FacialRecognitionActivity extends Activity {
 			Log.d(TAG, "In Destroy - Face Recog Obj = NULL");
 		}
 	}
-	
+
 	@Override
 	protected void onStop() {
 		super.onStop();
 	}
-	
+
 	protected void onResume() {
 		super.onResume();
 	}
-	
+
 	@Override
 	public void onBackPressed() { // Destroy the activity to avoid stacking of
 									// android activities
@@ -218,7 +218,7 @@ public class FacialRecognitionActivity extends Activity {
 		FacialRecognitionActivity.this.finishAffinity();
 		activityStartedOnce = false;
 	}
-	
+
 	/*
 	 * Function to retrieve a HashMap from the Shared preferences.
 	 * @return
@@ -229,14 +229,14 @@ public class FacialRecognitionActivity extends Activity {
 		hash.putAll((Map<? extends String, ? extends String>) settings.getAll());
 		return hash;
 	}
-	
+
 	/*
 	 * Function to store a HashMap to shared preferences.
 	 * @param hash
 	 */
 	protected void saveHash(HashMap<String, String> hashMap, Context context) {
 		SharedPreferences settings = context.getSharedPreferences(HASH_NAME, 0);
-		
+
 		SharedPreferences.Editor editor = settings.edit();
 		editor.clear();
 		Log.e(TAG, "Hash Save Size = " + hashMap.size());
@@ -245,19 +245,19 @@ public class FacialRecognitionActivity extends Activity {
 		}
 		editor.commit();
 	}
-	
+
 	/*
 	 * Function to retrieve the byte array from the Shared Preferences.
 	 */
 	public void loadAlbum() {
 		SharedPreferences settings = getSharedPreferences(ALBUM_NAME, 0);
 		String arrayOfString = settings.getString("albumArray", null);
-		
+
 		byte[] albumArray = null;
 		if (arrayOfString != null) {
 			String[] splitStringArray = arrayOfString.substring(1,
 					arrayOfString.length() - 1).split(", ");
-			
+
 			albumArray = new byte[splitStringArray.length];
 			for (int i = 0; i < splitStringArray.length; i++) {
 				albumArray[i] = Byte.parseByte(splitStringArray[i]);
@@ -266,7 +266,7 @@ public class FacialRecognitionActivity extends Activity {
 			Log.e("TAG", "De-Serialized my album");
 		}
 	}
-	
+
 	/*
 	 * Method to save the recognition album to a permanent device memory
 	 */
@@ -277,5 +277,5 @@ public class FacialRecognitionActivity extends Activity {
 		editor.putString("albumArray", Arrays.toString(albumBuffer));
 		editor.commit();
 	}
-	
+
 }

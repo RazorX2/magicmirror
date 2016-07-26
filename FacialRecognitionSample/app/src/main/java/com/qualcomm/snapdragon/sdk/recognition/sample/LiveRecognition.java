@@ -27,6 +27,9 @@ import com.qualcomm.snapdragon.sdk.face.FacialProcessing.PREVIEW_ROTATION_ANGLE;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class LiveRecognition extends Activity implements Camera.PreviewCallback {
 
@@ -45,15 +48,36 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
     private FaceData[] faceArray; // Array in which all the face data values will be returned for each face detected.
     private ImageView switchCameraButton;
     private Vibrator vibrate;
+    private FacialRecognitionActivity faceRecog;
+    private HashMap<String, String> hash;
+    public TextView Person;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live_recognition);
+
         final TextView Date = (TextView) findViewById(R.id.Date);
         final TextView Time = (TextView) findViewById(R.id.Time);
+        Person = (TextView) findViewById(R.id.PersonView);
+
         Date.setText(getCurrentDate());
         Time.setText(getCurrentTime());
+
+        faceObj = FacialRecognitionActivity.faceObj;
+        vibrate = (Vibrator) LiveRecognition.this
+                .getSystemService(Context.VIBRATOR_SERVICE);
+
+        orientationListener = new OrientationEventListener(this) {
+            @Override
+            public void onOrientationChanged(int orientation) {
+
+            }
+        };
+        faceRecog = new FacialRecognitionActivity();
+        hash = faceRecog.retrieveHash(this);
+
+
         Thread t = new Thread() {
             @Override
             public void run() {
@@ -65,6 +89,9 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
                             public void run() {
                                 Date.setText(getCurrentDate());
                                 Time.setText(getCurrentTime());
+                                //Person.setText(whoseMans());
+
+
                             }
                         });
                     }
@@ -72,16 +99,9 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
                 }
             }
         };
-        faceObj = FacialRecognitionActivity.faceObj;
-        vibrate = (Vibrator) LiveRecognition.this
-                .getSystemService(Context.VIBRATOR_SERVICE);
+        t.start();
 
-        orientationListener = new OrientationEventListener(this) {
-            @Override
-            public void onOrientationChanged(int orientation) {
 
-            }
-        };
 
     }
 
@@ -97,6 +117,40 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
         stopCamera();
     }
 
+    private String whoseMans(){
+        int numFaces = faceObj.getNumFaces();
+        if (numFaces == 0) {
+            Log.d("Facial Detection", "No Face Detected");
+            return "No Face Detected";
+        } else {
+            faceArray = faceObj.getFaceData();
+            if (faceArray == null) {
+                Log.d("Facial Detection", "Face array is null");
+                return "Face array is null";
+            } else {
+                int surfaceWidth = mPreview.getWidth();
+                int surfaceHeight = mPreview.getHeight();
+                faceObj.normalizeCoordinates(surfaceWidth, surfaceHeight);
+
+
+
+                String selectedPersonId = Integer.toString(faceArray[0].getPersonId());
+
+                String personName = null;
+                Iterator<HashMap.Entry<String, String>> iter = hash.entrySet()
+                        .iterator();
+                while (iter.hasNext()) {
+                    HashMap.Entry<String, String> entry = iter.next();
+                    if (entry.getValue().equals(selectedPersonId))
+                        personName = entry.getKey();
+                }
+
+
+                Log.d("TAG",""+personName);
+               return personName;
+            }
+        }
+    }
     protected void onDestroy() {
         super.onDestroy();
     }
@@ -117,7 +171,6 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
         if (cameraObj != null) {
             cameraObj.stopPreview();
             cameraObj.setPreviewCallback(null);
-            preview.removeView(mPreview);
             cameraObj.release();
         }
         cameraObj = null;
@@ -127,14 +180,12 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
      * Method that handles initialization and starting of camera.
      */
     private void startCamera() {
-        if (cameraFacingFront) {
-            cameraObj = Camera.open(FRONT_CAMERA_INDEX); // Open the Front camera
-        } else {
-            cameraObj = Camera.open(BACK_CAMERA_INDEX); // Open the back camera
-        }
+        cameraObj = Camera.open(FRONT_CAMERA_INDEX); // Open the Front camera
+
         mPreview = new CameraSurfacePreview(LiveRecognition.this, cameraObj,
                 orientationListener); // Create a new surface on which Camera will be displayed.
-
+        preview = (FrameLayout) findViewById(R.id.cameraPreview2);
+        preview.addView(mPreview);
         cameraObj.setPreviewCallback(LiveRecognition.this);
         frameWidth = cameraObj.getParameters().getPreviewSize().width;
         frameHeight = cameraObj.getParameters().getPreviewSize().height;
@@ -142,29 +193,25 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
 
     @Override
     public void onPreviewFrame(byte[] data, Camera camera) {
-        Log.i("TAG","Made it to recognition part");
+        Log.d("TAG","Made it to recognition part");
         boolean result = false;
         faceObj.setProcessingMode(FP_MODES.FP_MODE_VIDEO);
-        if (cameraFacingFront) {
-            result = faceObj.setFrame(data, frameWidth, frameHeight, true,
+        result = faceObj.setFrame(data, frameWidth, frameHeight, true,
                     rotationAngle);
-        } else {
-            result = faceObj.setFrame(data, frameWidth, frameHeight, false,
-                    rotationAngle);
-        }
         if (result) {
             int numFaces = faceObj.getNumFaces();
             if (numFaces == 0) {
-                Log.d("TAG", "No Face Detected");
+                Log.d("Facial Detection", "No Face Detected");
                 if (drawView != null) {
                     preview.removeView(drawView);
                     drawView = new DrawView(this, null, false);
                     preview.addView(drawView);
+                    Person.setText("");
                 }
             } else {
                 faceArray = faceObj.getFaceData();
                 if (faceArray == null) {
-                    Log.e("TAG", "Face array is null");
+                    Log.d("Facial Detection", "Face array is null");
                 } else {
                     int surfaceWidth = mPreview.getWidth();
                     int surfaceHeight = mPreview.getHeight();
@@ -172,7 +219,24 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
                     preview.removeView(drawView); // Remove the previously created view to avoid unnecessary stacking of
                     // Views.
                     drawView = new DrawView(this, faceArray, true);
-                    Log.i("TAG",""+faceArray);
+
+
+
+                    String selectedPersonId = Integer.toString(faceArray[0].getPersonId());
+
+                    String personName = null;
+                    Iterator<HashMap.Entry<String, String>> iter = hash.entrySet()
+                            .iterator();
+                    while (iter.hasNext()) {
+                        HashMap.Entry<String, String> entry = iter.next();
+                        if (entry.getValue().equals(selectedPersonId))
+                            personName = entry.getKey();
+                    }
+
+
+                    Log.d("Facial Detection",""+personName);
+                    if(personName !=null)
+                        Person.setText("Hello "+personName);
                     preview.addView(drawView);
                 }
             }

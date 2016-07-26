@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /* ======================================================================
- *  Copyright 2014 Qualcomm Technologies, Inc. All Rights Reserved.
- *  QTI Proprietary and Confidential.
- *  =====================================================================
- * @file    AndroidManifest.xml
- *
- */
+*  Copyright 2014 Qualcomm Technologies, Inc. All Rights Reserved.
+*  QTI Proprietary and Confidential.
+*  =====================================================================
+* @file    AndroidManifest.xml
+*
+*/
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.qualcomm.snapdragon.sdk.recognition.sample"

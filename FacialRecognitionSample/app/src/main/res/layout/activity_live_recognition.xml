@@ -19,8 +19,8 @@
 
     <FrameLayout
         android:id="@+id/cameraPreview2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true">
 
@@ -47,5 +47,13 @@
         android:textAlignment="textEnd"
         android:layout_gravity="end"
         android:textSize="40sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PersonView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp" />
 
 </RelativeLayout>

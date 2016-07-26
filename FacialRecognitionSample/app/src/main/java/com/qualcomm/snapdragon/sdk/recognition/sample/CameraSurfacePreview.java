@@ -59,8 +59,8 @@ public class CameraSurfacePreview extends SurfaceView implements
 			int format = pm.getPictureFormat();
 			List<Size> pictSize = pm.getSupportedPictureSizes();
 			for (int i = 0; i < pictSize.size(); i++) {
-				int width = pictSize.get(i).width;
-				int height = pictSize.get(i).height;
+				int width = 1;
+				int height =1;
 				int size = width * height * 3 / 2;
 				if (size < MAX_NUM_BYTES) {
 					index = i;
