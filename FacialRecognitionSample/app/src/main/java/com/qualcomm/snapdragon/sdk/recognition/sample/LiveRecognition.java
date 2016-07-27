@@ -9,6 +9,7 @@
 package com.qualcomm.snapdragon.sdk.recognition.sample;
 
 import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Context;
 import android.hardware.Camera;
 import android.os.Bundle;
@@ -25,6 +26,8 @@ import com.qualcomm.snapdragon.sdk.face.FaceData;
 import com.qualcomm.snapdragon.sdk.face.FacialProcessing;
 import com.qualcomm.snapdragon.sdk.face.FacialProcessing.FP_MODES;
 import com.qualcomm.snapdragon.sdk.face.FacialProcessing.PREVIEW_ROTATION_ANGLE;
+import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter;
+import com.twitter.sdk.android.tweetui.UserTimeline;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -47,7 +50,7 @@ import java.util.Vector;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-public class LiveRecognition extends Activity implements Camera.PreviewCallback {
+public class LiveRecognition extends ListActivity implements Camera.PreviewCallback  {
 
     private static PREVIEW_ROTATION_ANGLE rotationAngle = PREVIEW_ROTATION_ANGLE.ROT_90;
     Camera cameraObj; // Accessing the Android native Camera.
@@ -72,7 +75,8 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live_recognition);
-        /*************************************************/
+
+        /***********************XML READING**************************/
          StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
          StrictMode.setThreadPolicy(policy);
 
@@ -101,19 +105,15 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
         }
         QuoteCapsule quoteCapsule = quoteOfTheDay.getQuote();//Randomized Quote Has Description and title
         Log.d("XML Reading",quoteCapsule.description);
-
-
-
-
-
-        /*************************************************/
+        /*********************XML READING***************************/
+        /*********************Date and Time*************************/
         final TextView Date = (TextView) findViewById(R.id.Date);
         final TextView Time = (TextView) findViewById(R.id.Time);
         Person = (TextView) findViewById(R.id.PersonView);
 
         Date.setText(getCurrentDate());
         Time.setText(getCurrentTime());
-
+        /*********************Date and Time*************************/
         faceObj = FacialRecognitionActivity.faceObj;
         vibrate = (Vibrator) LiveRecognition.this
                 .getSystemService(Context.VIBRATOR_SERVICE);
@@ -127,7 +127,7 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
         faceRecog = new FacialRecognitionActivity();
         hash = faceRecog.retrieveHash(this);
 
-
+        /***************Threading********************************/
         Thread t = new Thread() {
             @Override
             public void run() {
@@ -150,8 +150,16 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
             }
         };
         t.start();
-
-
+        /**********Threading***********************************/
+        /**********Twitter************************************/
+        final UserTimeline userTimeline = new UserTimeline.Builder()
+                .screenName("CNN")
+                .build();
+        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
+                .setTimeline(userTimeline)
+                .build();
+        setListAdapter(adapter);
+        /**********Twitter***********************************/
 
     }
 
