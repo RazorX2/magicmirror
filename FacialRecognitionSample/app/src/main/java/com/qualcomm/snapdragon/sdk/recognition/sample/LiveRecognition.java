@@ -12,6 +12,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.hardware.Camera;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.os.Vibrator;
 import android.util.Log;
 import android.view.Menu;
@@ -25,11 +26,26 @@ import com.qualcomm.snapdragon.sdk.face.FacialProcessing;
 import com.qualcomm.snapdragon.sdk.face.FacialProcessing.FP_MODES;
 import com.qualcomm.snapdragon.sdk.face.FacialProcessing.PREVIEW_ROTATION_ANGLE;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Vector;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 
 public class LiveRecognition extends Activity implements Camera.PreviewCallback {
 
@@ -56,7 +72,41 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live_recognition);
+        /*************************************************/
+         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+         StrictMode.setThreadPolicy(policy);
 
+        CurrentWeatherForecast currentWeatherForecast = null;
+        try {
+            currentWeatherForecast = new CurrentWeatherForecast(); //pulls new forecast
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        CurrentWeatherCapsule weatherCapsule = currentWeatherForecast.getCurrentWeather();
+        Log.d("XML Reading",weatherCapsule.temperature_string);
+        FutureForecast futureForecast = null;
+        try {
+            futureForecast = new FutureForecast();//pulls current forecast
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        Vector<FutureForecastCapsule> futureForecastCapsule = futureForecast.getFutureForecast();
+        System.out.println();
+        Log.d("XML Reading",futureForecastCapsule.toString());
+        QuoteOfTheDay quoteOfTheDay = null;
+        try {
+            quoteOfTheDay = new QuoteOfTheDay(); //If new day new set of quotes
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        QuoteCapsule quoteCapsule = quoteOfTheDay.getQuote();//Randomized Quote Has Description and title
+        Log.d("XML Reading",quoteCapsule.description);
+
+
+
+
+
+        /*************************************************/
         final TextView Date = (TextView) findViewById(R.id.Date);
         final TextView Time = (TextView) findViewById(R.id.Time);
         Person = (TextView) findViewById(R.id.PersonView);
@@ -117,40 +167,7 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
         stopCamera();
     }
 
-    private String whoseMans(){
-        int numFaces = faceObj.getNumFaces();
-        if (numFaces == 0) {
-            Log.d("Facial Detection", "No Face Detected");
-            return "No Face Detected";
-        } else {
-            faceArray = faceObj.getFaceData();
-            if (faceArray == null) {
-                Log.d("Facial Detection", "Face array is null");
-                return "Face array is null";
-            } else {
-                int surfaceWidth = mPreview.getWidth();
-                int surfaceHeight = mPreview.getHeight();
-                faceObj.normalizeCoordinates(surfaceWidth, surfaceHeight);
 
-
-
-                String selectedPersonId = Integer.toString(faceArray[0].getPersonId());
-
-                String personName = null;
-                Iterator<HashMap.Entry<String, String>> iter = hash.entrySet()
-                        .iterator();
-                while (iter.hasNext()) {
-                    HashMap.Entry<String, String> entry = iter.next();
-                    if (entry.getValue().equals(selectedPersonId))
-                        personName = entry.getKey();
-                }
-
-
-                Log.d("TAG",""+personName);
-               return personName;
-            }
-        }
-    }
     protected void onDestroy() {
         super.onDestroy();
     }
@@ -241,6 +258,7 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
                 }
             }
         }
+
     }
 
     public String getCurrentDate() {
@@ -258,6 +276,228 @@ public class LiveRecognition extends Activity implements Camera.PreviewCallback 
         SimpleDateFormat apformat = new SimpleDateFormat("a");
         String strTime = "" + hformat.format(calendar.getTime()) + ":" + tformat.format(calendar.getTime()) + " " + apformat.format(calendar.getTime());
         return strTime;
+
+    }
+    class CurrentWeatherForecast {
+
+        private CurrentWeatherCapsule objBean;
+        private final URL url;
+        public CurrentWeatherForecast() throws MalformedURLException {
+            url = new URL("http://w1.weather.gov/xml/current_obs/KIAD.xml");
+            try {
+
+                URLConnection con = url.openConnection();
+
+
+                BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+
+                String inputLine;
+                String fullStr = "";
+                while ((inputLine = reader.readLine()) != null)
+                    fullStr = fullStr.concat(inputLine + "\n");
+
+                InputStream istream = url.openStream();
+                DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+                Document doc = builder.parse(istream);
+                doc.getDocumentElement().normalize();
+
+
+                NodeList nList = doc.getElementsByTagName("current_observation");
+                Node nNode = nList.item(0);
+
+                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element eElement = (Element) nNode;
+                    objBean = new CurrentWeatherCapsule();
+                    objBean.location = getTagValue("location", eElement);
+                    objBean.temperature_string = getTagValue("temperature_string", eElement);
+                    objBean.heat_index_string = getTagValue("heat_index_string", eElement);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        private String getTagValue(String sTag, Element eElement) {
+            NodeList nlList = eElement.getElementsByTagName(sTag).item(0)
+                    .getChildNodes();
+
+            Node nValue = (Node) nlList.item(0);
+
+            return nValue.getNodeValue();
+
+        }
+
+        public CurrentWeatherCapsule getCurrentWeather()
+        {
+            return objBean;
+        }
+
+    }
+
+    class CurrentWeatherCapsule {
+
+        public String location;
+        public String temperature_string;
+        public String heat_index_string;
+
+    }
+
+    class FutureForecast {
+        Vector<FutureForecastCapsule> vectParse;
+        private FutureForecastCapsule objBean;
+        private final URL url;
+
+
+        public FutureForecast() throws MalformedURLException {
+            url = new URL("http://www.myweather2.com/developer/weather.ashx?uac=3wGk2/np6s&uref=64441752-32ca-454a-a9bb-f28a08cd2a1b");
+            try {
+                vectParse = new Vector<FutureForecastCapsule>();
+                URLConnection con = url.openConnection();
+
+
+                BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+
+                String inputLine;
+                String fullStr = "";
+                while ((inputLine = reader.readLine()) != null)
+                    fullStr = fullStr.concat(inputLine + "\n");
+
+                InputStream istream = url.openStream();
+                DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+                Document doc = builder.parse(istream);
+                doc.getDocumentElement().normalize();
+
+                NodeList nList = doc.getElementsByTagName("forecast");
+
+                for (int temp = 0; temp < nList.getLength(); temp++) {
+
+                    Node nNode = nList.item(temp);
+                    if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+                        Element eElement = (Element) nNode;
+
+                        objBean = new FutureForecastCapsule();
+                        vectParse.add(objBean);
+                        //ADD TAGS
+                        objBean.date = getTagValue("date", eElement);
+                        objBean.day_max_temp = CToF(getTagValue("day_max_temp", eElement));
+                        objBean.night_min_temp = CToF(getTagValue("night_min_temp", eElement));
+
+                        NodeList nListTemp = doc.getElementsByTagName("day");
+                        eElement = (Element)(nListTemp.item(temp));
+                        objBean.day_weather_text = getTagValue("weather_text", eElement);
+
+                        nListTemp = doc.getElementsByTagName("night");
+                        eElement = (Element)(nListTemp.item(temp));
+                        objBean.night_weather_text = getTagValue("weather_text", eElement);
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        private String CToF(String s)
+        {
+            return ((9.0/5.0) * Integer.parseInt(s) + 32) + "";
+        }
+
+        private String getTagValue(String sTag, Element eElement) {
+            NodeList nlList = eElement.getElementsByTagName(sTag).item(0)
+                    .getChildNodes();
+
+            Node nValue = (Node) nlList.item(0);
+
+            return nValue.getNodeValue();
+
+        }
+
+        public Vector getFutureForecast()
+        {
+            return vectParse;
+        }
+
+    }
+
+    class FutureForecastCapsule {
+
+        public String date;
+        public String day_max_temp;
+        public String night_min_temp;
+        public String day_weather_text;
+        public String night_weather_text;
+
+    }
+
+    class QuoteOfTheDay {
+        Vector<QuoteCapsule> vectParse;
+        private QuoteCapsule objBean;
+        private final URL url;
+
+
+        public QuoteOfTheDay() throws MalformedURLException {
+            url = new URL("http://feeds.feedburner.com/quotationspage/qotd");
+            try {
+                vectParse = new Vector<QuoteCapsule>();
+                URLConnection con = url.openConnection();
+
+
+                BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+
+                String inputLine;
+                String fullStr = "";
+                while ((inputLine = reader.readLine()) != null)
+                    fullStr = fullStr.concat(inputLine + "\n");
+
+                InputStream istream = url.openStream();
+                DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+                Document doc = builder.parse(istream);
+                doc.getDocumentElement().normalize();
+
+                NodeList nList = doc.getElementsByTagName("item");
+
+                for (int temp = 2; temp < nList.getLength(); temp++) {
+
+                    Node nNode = nList.item(temp);
+                    if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+                        Element eElement = (Element) nNode;
+
+                        objBean = new QuoteCapsule();
+                        vectParse.add(objBean);
+                        //ADD TAGS
+                        objBean.title = getTagValue("title", eElement);
+                        objBean.description = getTagValue("description", eElement);
+
+                    }
+                }
+                System.out.println();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+
+        private String getTagValue(String sTag, Element eElement) {
+            NodeList nlList = eElement.getElementsByTagName(sTag).item(0)
+                    .getChildNodes();
+
+            Node nValue = (Node) nlList.item(0);
+
+            return nValue.getNodeValue();
+
+        }
+
+        public QuoteCapsule getQuote()
+        {
+            return vectParse.get((int)(Math.random() * 9));
+        }
+
+    }
+
+    class QuoteCapsule {
+        public String title;
+        public String description;
 
     }
 }
