@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dgts__ic_success.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xxxhdpi-v4\\dgts__ic_success.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dgts__spinner_dark.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xxxhdpi-v4\\dgts__spinner_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dgts__logo_name.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xxxhdpi-v4\\dgts__logo_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dgts__logo.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xxxhdpi-v4\\dgts__logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dgts__login_header.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xxxhdpi-v4\\dgts__login_header.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dgts__addressbook_header.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xxxhdpi-v4\\dgts__addressbook_header.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dgts__spinner_light.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xxxhdpi-v4\\dgts__spinner_light.png"
+    }
+]

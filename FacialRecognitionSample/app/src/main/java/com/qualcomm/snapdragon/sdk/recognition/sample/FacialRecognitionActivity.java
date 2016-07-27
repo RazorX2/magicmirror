@@ -8,6 +8,9 @@
 
 package com.qualcomm.snapdragon.sdk.recognition.sample;
 
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import io.fabric.sdk.android.Fabric;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -32,6 +35,11 @@ import android.widget.Toast;
 
 public class FacialRecognitionActivity extends Activity {
 
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "GVHEcxqqeT8N9AFzk5W8WsDRN";
+    private static final String TWITTER_SECRET = "ubmtsp81wXLwsLOeAGSdZ9V28cQzdgr6LC8XbnhjCveeDElekz";
+
+
 	private GridView gridView;
 	public static FacialProcessing faceObj;
 	public final String TAG = "FacialRecognitionActivity";
@@ -44,6 +52,8 @@ public class FacialRecognitionActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+		Fabric.with(this, new Twitter(authConfig));
 		setContentView(R.layout.activity_facial_recognition);
 
 		hash = retrieveHash(getApplicationContext()); // Retrieve the previously

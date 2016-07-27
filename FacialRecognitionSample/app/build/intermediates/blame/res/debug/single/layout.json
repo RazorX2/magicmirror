@@ -1,5 +1,65 @@
 [
     {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__media_badge.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\layout\\tw__media_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__video_control.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\layout\\tw__video_control.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\images.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\images.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dgts__activity_pin_code.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\layout\\dgts__activity_pin_code.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__composer_view.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-composer\\1.0.5\\res\\layout\\tw__composer_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dgts__activity_confirmation.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\layout\\dgts__activity_confirmation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_choose_user.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_choose_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\usernames.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\usernames.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dgts__activity_phone_number.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\layout\\dgts__activity_phone_number.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dgts__activity_contacts.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\layout\\dgts__activity_contacts.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__app_card.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-composer\\1.0.5\\res\\layout\\tw__app_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_image_confirmation.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_image_confirmation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dgts__state_button.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\layout\\dgts__state_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__tweet_compact.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\layout\\tw__tweet_compact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__player_activity.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\layout\\tw__player_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_live_recognition.xml",
         "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_live_recognition.xml"
     },
@@ -8,23 +68,39 @@
         "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_facial_recognition.xml"
     },
     {
-        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\images.xml",
-        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\images.xml"
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dgts__activity_failure.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\layout\\dgts__activity_failure.xml"
     },
     {
         "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_photo.xml",
         "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_add_photo.xml"
     },
     {
-        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\usernames.xml",
-        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\usernames.xml"
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__activity_share_email.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\twitter-core\\1.7.0\\res\\layout\\tw__activity_share_email.xml"
     },
     {
-        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_choose_user.xml",
-        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_choose_user.xml"
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__activity_composer.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-composer\\1.0.5\\res\\layout\\tw__activity_composer.xml"
     },
     {
-        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_image_confirmation.xml",
-        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\layout\\activity_image_confirmation.xml"
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__gallery_activity.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\layout\\tw__gallery_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dgts__country_row.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\layout\\dgts__country_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__activity_oauth.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\twitter-core\\1.7.0\\res\\layout\\tw__activity_oauth.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__tweet.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\layout\\tw__tweet.xml"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__action_bar.xml",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\layout\\tw__action_bar.xml"
     }
 ]

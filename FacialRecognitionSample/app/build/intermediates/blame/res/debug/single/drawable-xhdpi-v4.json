@@ -1,6 +1,386 @@
 [
     {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00033.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00033.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_retweet_dark.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_retweet_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_video_play.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_video_play.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00016.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00016.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_play_pressed.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_play_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00017.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00017.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\dgts__spinner_light.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xhdpi-v4\\dgts__spinner_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_gif_badge.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_gif_badge.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00032.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00032.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_tweet_photo_error_dark.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_tweet_photo_error_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00002.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00002.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00047.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00047.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00029.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00029.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00015.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00015.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\dgts__ic_success.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xhdpi-v4\\dgts__ic_success.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00020.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00020.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00004.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00004.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00001.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00001.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_logo_white.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_logo_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__action_heart_off_default.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__action_heart_off_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00048.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00048.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00045.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00045.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00034.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00034.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_retweet_light.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_retweet_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00050.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00050.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00018.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00018.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00031.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00031.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_inline_share.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_inline_share.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00044.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00044.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__composer_logo_white.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-composer\\1.0.5\\res\\drawable-xhdpi-v4\\tw__composer_logo_white.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00019.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00019.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00022.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00022.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__share_email_header.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\twitter-core\\1.7.0\\res\\drawable-xhdpi-v4\\tw__share_email_header.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\dgts__addressbook_header.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xhdpi-v4\\dgts__addressbook_header.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00028.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00028.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00013.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00013.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_seekbar_secondary_bg.9.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_seekbar_secondary_bg.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00051.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00051.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_video_play_pressed.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_video_play_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_seekbar_progress_bg.9.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_seekbar_progress_bg.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00054.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00054.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00057.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00057.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00009.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00009.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00035.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00035.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00006.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00006.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00000.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00000.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_video_pause_pressed.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_video_pause_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00038.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00038.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00003.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00003.png"
+    },
+    {
         "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\dgts__spinner_dark.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xhdpi-v4\\dgts__spinner_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_play_default.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_play_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__action_heart_on_default.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__action_heart_on_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00041.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00041.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__composer_close.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-composer\\1.0.5\\res\\drawable-xhdpi-v4\\tw__composer_close.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_vine_badge.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_vine_badge.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00008.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00008.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00025.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00025.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00011.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00011.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_seekbar_bg.9.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_seekbar_bg.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00024.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00024.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\dgts__logo.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xhdpi-v4\\dgts__logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00039.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00039.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_tweet_verified.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_tweet_verified.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00010.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00010.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00055.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00055.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_logo_blue.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_logo_blue.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00012.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00012.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_video_pause.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_video_pause.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_video_replay_pressed.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_video_replay_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00042.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00042.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00056.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00056.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00053.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00053.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00037.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00037.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00007.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00007.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00023.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00023.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00026.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00026.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00030.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00030.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00005.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00005.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00036.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00036.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00027.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00027.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00014.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00014.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00059.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00059.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00021.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00021.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_tweet_photo_error_light.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_tweet_photo_error_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00052.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00052.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00058.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00058.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\dgts__login_header.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xhdpi-v4\\dgts__login_header.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00040.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00040.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00046.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00046.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00043.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00043.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_logo_default.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\twitter-core\\1.7.0\\res\\drawable-xhdpi-v4\\tw__ic_logo_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__ic_video_replay.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__ic_video_replay.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\dgts__logo_name.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.digits.sdk.android\\digits\\1.11.1\\res\\drawable-xhdpi-v4\\dgts__logo_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__composer_logo_blue.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-composer\\1.0.5\\res\\drawable-xhdpi-v4\\tw__composer_logo_blue.png"
+    },
+    {
+        "merged": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00049.png",
+        "source": "C:\\Users\\Intern3\\Documents\\GitHub\\magicmirror\\FacialRecognitionSample\\app\\build\\intermediates\\exploded-aar\\com.twitter.sdk.android\\tweet-ui\\1.11.1\\res\\drawable-xhdpi-v4\\tw__heart_animation_detail_60fps_00049.png"
     }
 ]

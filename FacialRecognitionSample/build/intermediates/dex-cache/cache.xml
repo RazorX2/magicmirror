@@ -1,12 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="24.0.1"
-        sha1="7f63063814fcfb387d3e9a44190d5480d217566c">
-        <dex dex="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9fe9bc069ba0b026fa66dd1bb6b48c6a86e7a7c5\classes.dex" />
-    </item>
-
-</items>

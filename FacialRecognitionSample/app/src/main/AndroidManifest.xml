@@ -47,6 +47,9 @@ android:label="@string/title_activity_live_recognition"
 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
 android:screenOrientation="portrait" >
 </activity>
-</application>
+    <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7d5d7570d5750729085feee3bc251b576de2cdf2" />
+    </application>
 
 </manifest>
