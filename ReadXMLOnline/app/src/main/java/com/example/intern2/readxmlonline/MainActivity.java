@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         TextView Log = (TextView) findViewById(R.id.Logger);
         Log.setMovementMethod(new ScrollingMovementMethod());
 
-        Typeface typeFace = Typeface.createFromAsset(getAssets(), "PAPYRUS.TTF");
+        Typeface typeFace = Typeface.createFromAsset(getAssets(), "Moon Light.ttf");
         Log.setTypeface(typeFace);
 
         CurrentWeatherForecast currentWeatherForecast = null;
