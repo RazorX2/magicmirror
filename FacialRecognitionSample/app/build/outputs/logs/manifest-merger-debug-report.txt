@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:10:1-51:12
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:10:1-52:12
 	package
 		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:11:1-57
 		INJECTED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml
@@ -41,49 +41,53 @@ uses-permission#android.permission.CAMERA
 ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:22:1-61
 	android:name
 		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:22:18-58
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:23:5-66
+	android:name
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:23:22-64
 uses-feature#android.hardware.camera
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:24:1-56
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:25:1-56
 	android:name
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:24:15-53
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:25:15-53
 application
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:26:1-49:15
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:27:1-50:15
 	android:label
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:30:1-33
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:31:1-33
 	android:configChanges
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:28:1-36
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:29:1-36
 	android:allowBackup
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:27:1-27
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:28:1-27
 	android:icon
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:29:1-37
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:30:1-37
 	android:largeHeap
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:31:1-25
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:32:1-25
 activity#com.qualcomm.snapdragon.sdk.recognition.sample.FacialRecognitionActivity
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:32:1-42:12
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:33:1-43:12
 	android:screenOrientation
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:35:1-37
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:36:1-37
 	android:label
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:34:1-33
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:35:1-33
 	android:theme
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:36:1-59
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:37:1-59
 	android:name
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:33:1-88
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:34:1-88
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:37:1-41:17
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:38:1-42:17
 action#android.intent.action.MAIN
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:38:1-53
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:39:1-53
 	android:name
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:38:9-50
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:39:9-50
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:40:1-61
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:41:1-61
 	android:name
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:40:11-58
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:41:11-58
 activity#com.qualcomm.snapdragon.sdk.recognition.sample.LiveRecognition
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:43:1-48:12
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:44:1-49:12
 	android:screenOrientation
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:47:1-37
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:48:1-37
 	android:label
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:45:1-56
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:46:1-56
 	android:theme
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:46:1-59
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:47:1-59
 	android:name
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:44:1-78
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:45:1-78
