@@ -25,7 +25,7 @@ public class MainActivity extends ListActivity {
         setContentView(R.layout.activity_main);
 
         final UserTimeline userTimeline = new UserTimeline.Builder()
-                .screenName("vtandale12")
+                .screenName("razorx2llc")
                 .build();
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
                 .setTimeline(userTimeline)
