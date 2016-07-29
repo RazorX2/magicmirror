@@ -4,53 +4,47 @@
     api-level="21"
     density="tvdpi"
     format="7"
-    timestamp="592873483432493"
+    timestamp="695426302821839"
     token="-3886045392555556717" >
 
     <task
         name="javac"
-        duration="468" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="120" />
+        duration="0" />
     <task
         name="verifier"
-        duration="24" />
+        duration="0" />
 
     <artifact
         location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\res\resources-debug.ap_"
         type="RESOURCES" />
-    <artifact
-        location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-        type="DEX" />
 
-    <build timestamp="592695343599323" >
+    <build timestamp="694837563035699" >
         <artifact
             location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="592873483432493" >
+    <build
+        timestamp="695147140752268"
+        verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
-            type="DEX" />
+            location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\builds\debug\695147140752268\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build timestamp="695322885513729" >
         <artifact
             location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
             type="DEX" />
+    </build>
+    <build timestamp="695426302821839" >
+        <artifact
+            location="C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

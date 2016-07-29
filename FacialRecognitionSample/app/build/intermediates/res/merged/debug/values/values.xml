@@ -163,7 +163,8 @@
     </plurals>
     <string name="action_settings">Settings</string>
     <string name="app_name">Snap Recognition</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">6a30907f-b50f-4f57-97b3-952f8ba80ae9</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">3a07b091-2da9-4b11-8598-66e03ce77ef2</string>
+    <string name="currentweather">CurrentWeather</string>
     <string name="description">Description</string>
     <string name="dgts__call_me">Call me</string>
     <string name="dgts__calling">Calling…</string>
@@ -221,6 +222,7 @@
     <string name="dgts__verification_code">Verification code</string>
     <string name="dgts_pin_code_terms">You have previously set a 2-step verification code on digits.com</string>
     <string name="kit_name">Twitter</string>
+    <string name="location">location</string>
     <string name="title_activity_add_photo">AddPhoto</string>
     <string name="title_activity_choose_user">ChooseUser</string>
     <string name="title_activity_image_confirmation">ImageConfirmation</string>

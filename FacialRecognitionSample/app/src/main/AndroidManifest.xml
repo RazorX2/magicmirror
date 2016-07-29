@@ -47,6 +47,19 @@ android:label="@string/title_activity_live_recognition"
 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
 android:screenOrientation="portrait" >
 </activity>
+    <activity
+    android:name="com.qualcomm.snapdragon.sdk.recognition.sample.AddPhoto"
+    android:label="@string/title_activity_add_photo"
+    android:screenOrientation="portrait" >
+</activity>
+<activity
+    android:name="com.qualcomm.snapdragon.sdk.recognition.sample.ImageConfirmation"
+    android:label="@string/title_activity_image_confirmation" >
+</activity>
+<activity
+    android:name="com.qualcomm.snapdragon.sdk.recognition.sample.ChooseUser"
+    android:label="@string/title_activity_choose_user" >
+</activity>
     <meta-data
             android:name="io.fabric.ApiKey"
             android:value="7d5d7570d5750729085feee3bc251b576de2cdf2" />

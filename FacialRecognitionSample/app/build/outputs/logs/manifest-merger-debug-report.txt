@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:10:1-55:12
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:10:1-68:12
 	package
 		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:11:1-57
 		INJECTED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml
@@ -83,7 +83,7 @@ ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample
 	android:name
 		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:25:15-53
 application
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:27:1-53:19
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:27:1-66:19
 MERGED from [com.twitter.sdk.android:twitter:1.14.1] C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter\1.14.1\AndroidManifest.xml:25:5-20
 MERGED from [com.twitter.sdk.android:tweet-ui:1.11.1] C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\1.11.1\AndroidManifest.xml:27:5-35:19
 MERGED from [com.twitter.sdk.android:twitter-core:1.7.0] C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter-core\1.7.0\AndroidManifest.xml:27:5-40:19
@@ -142,12 +142,32 @@ ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample
 		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:47:1-59
 	android:name
 		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:45:1-78
-meta-data#io.fabric.ApiKey
-ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:50:5-52:72
-	android:value
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:52:13-69
+activity#com.qualcomm.snapdragon.sdk.recognition.sample.AddPhoto
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:50:5-54:12
+	android:screenOrientation
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:53:5-41
+	android:label
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:52:5-53
 	android:name
-		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:51:13-44
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:51:5-75
+activity#com.qualcomm.snapdragon.sdk.recognition.sample.ImageConfirmation
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:55:1-58:12
+	android:label
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:57:5-62
+	android:name
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:56:5-84
+activity#com.qualcomm.snapdragon.sdk.recognition.sample.ChooseUser
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:59:1-62:12
+	android:label
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:61:5-55
+	android:name
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:60:5-77
+meta-data#io.fabric.ApiKey
+ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:63:5-65:72
+	android:value
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:65:13-69
+	android:name
+		ADDED from C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\src\main\AndroidManifest.xml:64:13-44
 activity#com.twitter.sdk.android.tweetui.PlayerActivity
 ADDED from [com.twitter.sdk.android:tweet-ui:1.11.1] C:\Users\Intern3\Documents\GitHub\magicmirror\FacialRecognitionSample\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\1.11.1\AndroidManifest.xml:28:9-31:49
 	android:configChanges

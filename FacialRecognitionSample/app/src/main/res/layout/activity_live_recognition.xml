@@ -34,7 +34,7 @@
         android:layout_gravity="end"
         android:textSize="50sp"
         android:id="@+id/Time"
-        />
+        android:layout_below="@+id/cameraPreview2" />
 
     <TextView
         android:layout_width="match_parent"
@@ -59,11 +59,16 @@
     <ListView android:id="@id/android:list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Date"
+        android:layout_above="@+id/PersonView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="41dp"
-        android:layout_alignBottom="@+id/PersonView"
-        android:layout_marginRight="200dp" />
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp" />
 
 </RelativeLayout>

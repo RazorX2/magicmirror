@@ -8,9 +8,9 @@
 
 package com.qualcomm.snapdragon.sdk.recognition.sample;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -18,8 +18,10 @@ import android.os.Vibrator;
 import android.util.Log;
 import android.view.Menu;
 import android.view.OrientationEventListener;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.qualcomm.snapdragon.sdk.face.FaceData;
@@ -40,17 +42,20 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.Vector;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-public class LiveRecognition extends ListActivity implements Camera.PreviewCallback  {
+public class LiveRecognition extends ListActivity implements Camera.PreviewCallback {
 
     private static PREVIEW_ROTATION_ANGLE rotationAngle = PREVIEW_ROTATION_ANGLE.ROT_90;
     Camera cameraObj; // Accessing the Android native Camera.
@@ -77,8 +82,19 @@ public class LiveRecognition extends ListActivity implements Camera.PreviewCallb
         setContentView(R.layout.activity_live_recognition);
 
         /***********************XML READING**************************/
-         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-         StrictMode.setThreadPolicy(policy);
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+        TextView location = (TextView) findViewById(R.id.location);
+        TextView weather = (TextView) findViewById(R.id.currentweather);
+        TextView QOTD = (TextView) findViewById(R.id.QOTD);
+
+        TextView forecastdate1 = (TextView) findViewById(R.id.forecastdate1);
+        TextView forecastdate2 = (TextView) findViewById(R.id.forecastdate2);
+        TextView forecastdate3 = (TextView) findViewById(R.id.forecastdate3);
+        TextView forecasttemp1 = (TextView) findViewById(R.id.forecasttemp1);
+        TextView forecasttemp2 = (TextView) findViewById(R.id.forecasttemp2);
+        TextView forecasttemp3 = (TextView) findViewById(R.id.forecasttemp3);
+
 
         CurrentWeatherForecast currentWeatherForecast = null;
         try {
@@ -87,7 +103,8 @@ public class LiveRecognition extends ListActivity implements Camera.PreviewCallb
             e.printStackTrace();
         }
         CurrentWeatherCapsule weatherCapsule = currentWeatherForecast.getCurrentWeather();
-        Log.d("XML Reading",weatherCapsule.temperature_string);
+        weather.setText(weatherCapsule.temperature_string);
+        location.setText(weatherCapsule.location);
         FutureForecast futureForecast = null;
         try {
             futureForecast = new FutureForecast();//pulls current forecast
@@ -95,8 +112,25 @@ public class LiveRecognition extends ListActivity implements Camera.PreviewCallb
             e.printStackTrace();
         }
         Vector<FutureForecastCapsule> futureForecastCapsule = futureForecast.getFutureForecast();
-        System.out.println();
-        Log.d("XML Reading",futureForecastCapsule.toString());
+
+        Calendar c = Calendar.getInstance();
+        String day;
+        try {
+            forecastdate1.setText("Today");
+            Date date = new SimpleDateFormat("yyyy-mm-dd").parse(futureForecastCapsule.get(1).date);
+            forecastdate2.setText(getDay(date.getDay()));
+            date = new SimpleDateFormat("yyyy-mm-dd").parse(futureForecastCapsule.get(2).date);
+            forecastdate3.setText(getDay(date.getDay()));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+        forecasttemp1.setText((futureForecastCapsule.get(0).day_max_temp + " " + futureForecastCapsule.get(0).night_min_temp));
+        forecasttemp2.setText((futureForecastCapsule.get(1).day_max_temp + " " + futureForecastCapsule.get(1).night_min_temp));
+        forecasttemp3.setText((futureForecastCapsule.get(2).day_max_temp + " " + futureForecastCapsule.get(2).night_min_temp));
+
+
         QuoteOfTheDay quoteOfTheDay = null;
         try {
             quoteOfTheDay = new QuoteOfTheDay(); //If new day new set of quotes
@@ -104,12 +138,31 @@ public class LiveRecognition extends ListActivity implements Camera.PreviewCallb
             e.printStackTrace();
         }
         QuoteCapsule quoteCapsule = quoteOfTheDay.getQuote();//Randomized Quote Has Description and title
-        Log.d("XML Reading",quoteCapsule.description);
+        while (quoteCapsule.description.length() > 120)
+            quoteCapsule = quoteOfTheDay.getQuote();
+        QOTD.setText(quoteCapsule.description + "\n\t\t" + "--" + quoteCapsule.title);
         /*********************XML READING***************************/
         /*********************Date and Time*************************/
         final TextView Date = (TextView) findViewById(R.id.Date);
         final TextView Time = (TextView) findViewById(R.id.Time);
         Person = (TextView) findViewById(R.id.PersonView);
+
+        Typeface typeFace = Typeface.createFromAsset(getAssets(), "Moon Light.ttf");
+        Date.setTypeface(typeFace);
+        Time.setTypeface(typeFace);
+        Person.setTypeface(typeFace);
+        location.setTypeface(typeFace);
+        weather.setTypeface(typeFace);
+        QOTD.setTypeface(typeFace);
+        forecastdate1.setTypeface(typeFace);
+        forecastdate2.setTypeface(typeFace);
+        forecastdate3.setTypeface(typeFace);
+        forecasttemp1.setTypeface(typeFace);
+        forecasttemp2.setTypeface(typeFace);
+        forecasttemp3.setTypeface(typeFace);
+
+        setForecastIcons(futureForecastCapsule);
+
 
         Date.setText(getCurrentDate());
         Time.setText(getCurrentTime());
@@ -151,6 +204,7 @@ public class LiveRecognition extends ListActivity implements Camera.PreviewCallb
         };
         t.start();
         /**********Threading***********************************/
+
         /**********Twitter************************************/
         final UserTimeline userTimeline = new UserTimeline.Builder()
                 .screenName("CNN")
@@ -159,7 +213,141 @@ public class LiveRecognition extends ListActivity implements Camera.PreviewCallb
                 .setTimeline(userTimeline)
                 .build();
         setListAdapter(adapter);
+
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                ListView listView = getListView();
+                int listLen = adapter.getCount();
+                Log.d("listLen",listLen+"");
+                while(true) {
+                    for (int i = 1; i < 20; i++) {
+                        try {
+                            Thread.sleep(4000);
+                            listView.smoothScrollToPosition(i);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    listView.smoothScrollToPosition(1);
+
+                }
+            }
+        },4000);
         /**********Twitter***********************************/
+        /**********Miscellenous Edits***********************/
+        View decorView = getWindow().getDecorView();
+// Hide both the navigation bar and the status bar.
+// SYSTEM_UI_FLAG_FULLSCREEN is only available on Android 4.1 and higher, but as
+// a general rule, you should design your app to hide the status bar whenever you
+// hide the navigation bar.
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+        /*************************************************/
+    }
+
+    public String getDay(int i) {
+        switch (i)
+        {
+            case 0:
+                return "Sunday";
+            case 1:
+                return "Monday";
+            case 2:
+                return "Tuesday";
+            case 3:
+                return "Wednesday";
+            case 4:
+                return "Thursday";
+            case 5:
+                return "Friday";
+            case 6:
+                return "Saturday";
+            default:
+                return "N/A";
+        }
+    }
+
+    public void setForecastIcons(Vector<FutureForecastCapsule> futureForecastCapsule)
+    {
+        ImageView forecast1image1 = (ImageView)findViewById(R.id.forecast1image1);
+        ImageView forecast1image2 = (ImageView)findViewById(R.id.forecast1image2);
+        ImageView forecast2image1 = (ImageView)findViewById(R.id.forecast2image1);
+        ImageView forecast2image2 = (ImageView)findViewById(R.id.forecast2image2);
+        ImageView forecast3image1 = (ImageView)findViewById(R.id.forecast3image1);
+        ImageView forecast3image2 = (ImageView)findViewById(R.id.forecast3image2);
+
+        switchImagesDay(futureForecastCapsule.get(0), forecast1image1);
+        switchImagesNight(futureForecastCapsule.get(0), forecast1image2);
+        switchImagesDay(futureForecastCapsule.get(1), forecast2image1);
+        switchImagesNight(futureForecastCapsule.get(1), forecast2image2);
+        switchImagesDay(futureForecastCapsule.get(2), forecast3image1);
+        switchImagesNight(futureForecastCapsule.get(2), forecast3image2);
+
+
+
+
+    }
+
+    public void switchImagesDay(FutureForecastCapsule capsule, ImageView imageView)
+    {
+        switch(capsule.day_weather_text)
+        {
+            case "Sunny skies":
+            case "Clear skies":
+                imageView.setImageResource(R.drawable.clearskiesday);
+                break;
+            case "Light rain shower":
+                imageView.setImageResource(R.drawable.light_rain_shower);
+                break;
+            case "Moderate or heavy rain shower":
+                imageView.setImageResource(R.drawable.moderate_heavy_rain);
+                break;
+            case "Overcast":
+                imageView.setImageResource(R.drawable.overcast);
+                break;
+            case "Partly cloudy skies":
+                imageView.setImageResource(R.drawable.partly_cloudy_day);
+                break;
+            case "Patchy rain possible":
+                imageView.setImageResource(R.drawable.patchy_rain_day);
+                break;
+            case "Mostly cloudy skies":
+            default:
+                imageView.setImageResource(R.drawable.mostly_cloudy_day);
+                break;
+        }
+    }
+
+    public void switchImagesNight(FutureForecastCapsule capsule, ImageView imageView)
+    {
+        switch(capsule.night_weather_text)
+        {
+            case "Sunny skies":
+            case "Clear skies":
+                imageView.setImageResource(R.drawable.clear_skies_night);
+                break;
+            case "Light rain shower":
+                imageView.setImageResource(R.drawable.light_rain_shower);
+                break;
+            case "Moderate or heavy rain shower":
+                imageView.setImageResource(R.drawable.moderate_heavy_rain);
+                break;
+            case "Overcast":
+                imageView.setImageResource(R.drawable.overcast);
+                break;
+            case "Partly cloudy skies":
+                imageView.setImageResource(R.drawable.partly_cloudy_night);
+                break;
+            case "Patchy rain possible":
+                imageView.setImageResource(R.drawable.patchy_rain_night);
+                break;
+            case "Mostly cloudy skies":
+            default:
+                imageView.setImageResource(R.drawable.mostly_cloudy_night);
+                break;
+        }
 
     }
 
@@ -246,22 +434,24 @@ public class LiveRecognition extends ListActivity implements Camera.PreviewCallb
                     drawView = new DrawView(this, faceArray, true);
 
 
+                    for(int i=0; i<faceArray.length;i++) {
+                        String selectedPersonId = Integer.toString(faceArray[i].getPersonId());
 
-                    String selectedPersonId = Integer.toString(faceArray[0].getPersonId());
+                        String personName = null;
+                        Iterator<HashMap.Entry<String, String>> iter = hash.entrySet()
+                                .iterator();
+                        while (iter.hasNext()) {
+                            HashMap.Entry<String, String> entry = iter.next();
+                            if (entry.getValue().equals(selectedPersonId))
+                                personName = entry.getKey();
+                        }
 
-                    String personName = null;
-                    Iterator<HashMap.Entry<String, String>> iter = hash.entrySet()
-                            .iterator();
-                    while (iter.hasNext()) {
-                        HashMap.Entry<String, String> entry = iter.next();
-                        if (entry.getValue().equals(selectedPersonId))
-                            personName = entry.getKey();
+
+                        Log.d("Facial Detection", "" + personName);
+                        if (personName != null)
+                            if (!Person.getText().toString().contains("Hello"))
+                                Person.setText("Hello " + personName);
                     }
-
-
-                    Log.d("Facial Detection",""+personName);
-                    if(personName !=null)
-                        Person.setText("Hello "+personName);
                     preview.addView(drawView);
                 }
             }

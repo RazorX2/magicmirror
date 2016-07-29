@@ -20,8 +20,8 @@ android {
 
     defaultConfig {
         applicationId "com.qualcomm.snapdragon.sdk.recognition.sample"
-        minSdkVersion 9
-        targetSdkVersion 17
+        minSdkVersion 21
+        targetSdkVersion 21
     }
 
     buildTypes {

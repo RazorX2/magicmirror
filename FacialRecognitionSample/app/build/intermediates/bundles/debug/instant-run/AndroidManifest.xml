@@ -14,8 +14,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -49,6 +49,19 @@
             android:label="@string/title_activity_live_recognition"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.qualcomm.snapdragon.sdk.recognition.sample.AddPhoto"
+            android:label="@string/title_activity_add_photo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.qualcomm.snapdragon.sdk.recognition.sample.ImageConfirmation"
+            android:label="@string/title_activity_image_confirmation" >
+        </activity>
+        <activity
+            android:name="com.qualcomm.snapdragon.sdk.recognition.sample.ChooseUser"
+            android:label="@string/title_activity_choose_user" >
         </activity>
 
         <meta-data

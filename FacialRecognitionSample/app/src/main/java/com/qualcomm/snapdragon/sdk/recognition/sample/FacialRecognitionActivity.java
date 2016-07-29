@@ -94,9 +94,42 @@ public class FacialRecognitionActivity extends Activity {
 		// Vibrator for button press
 		final Vibrator vibrate = (Vibrator) FacialRecognitionActivity.this
 				.getSystemService(Context.VIBRATOR_SERVICE);
+		gridView = (GridView) findViewById(R.id.gridview);
+		gridView.setAdapter(new ImageAdapter(this));
 
-		liveRecognition();
+		gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View v,
+									int position, long id) {
+				vibrate.vibrate(85);
+				switch (position) {
 
+					case 0: // Adding a person
+						addNewPerson();
+						break;
+
+					case 1: // Updating an existing person
+						updateExistingPerson();
+						break;
+
+					case 2: // Identifying a person.
+						identifyPerson();
+						break;
+
+					case 3: // Live Recognition
+						liveRecognition();
+						break;
+
+					case 4: // Reseting an album
+						resetAlbum();
+						break;
+
+					case 5: // Delete Existing Person
+						deletePerson();
+						break;
+
+				}
+			}
+		});
 
 	}
 
